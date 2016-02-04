@@ -12,7 +12,8 @@
 	<h2>Latest Products</h2>
 
 	@foreach($products as $product)
-		<p> {{ $product['name'] }} at {{ $product['price'] }} each</p>
+		<p> {{ $product->name }} at {{ $product->price }} 
+		each and we have  {{ $product->stock }} in stock</p>
 	@endforeach
 
 @endsection
