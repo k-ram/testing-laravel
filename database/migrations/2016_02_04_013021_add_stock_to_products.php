@@ -13,7 +13,7 @@ class AddStockToProducts extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->integer('stock');
+            $table->smallInteger('stock');
         });
     }
 
@@ -25,7 +25,7 @@ class AddStockToProducts extends Migration
     public function down()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->dropColumn['stock'];
+            $table->dropColumn('stock');
         });
     }
 }
