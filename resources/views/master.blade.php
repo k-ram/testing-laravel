@@ -17,5 +17,9 @@
 
 	@yield('content')
 
+	<footer>
+		<p>copyright</p>
+	</footer>
+
 </body>
 </html>

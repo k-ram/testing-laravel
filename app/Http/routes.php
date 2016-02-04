@@ -23,9 +23,11 @@ Route::get('contact', function () {
 	return view('contact');
 });
 
-Route::get('products', function () {
-	return view('products');
+Route::post('contact', function(){
+	return 'Sent contact form';
 });
+
+Route::get('products', 'ProductsController@index');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
